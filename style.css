@@ -1,0 +1,229 @@
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ @font-face{
+   font-family: Hanken;
+   src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+ }
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   height: 100vh;
+   font-family: Hanken;
+}
+.container{
+   margin: 10px;
+   width: 35rem;
+   background-color: red;
+   height: 27rem;
+   display: flex;
+   flex-direction: row;
+   background-color: hsl(0, 0%, 100%);
+   box-shadow: 10px 10px 10px hsla(224, 30%, 27%, 0.1);
+   border-radius: 30px;
+   box-sizing: content-box;
+}
+.part{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+/*   justify-content: center;*/
+   width: 50%;
+   height: 100%;
+   padding: 25px 25px 30px 25px;
+   box-sizing: border-box;
+}
+h2{
+   margin-top: 0;
+   font-weight: 700;
+}
+.part-left{
+   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   border-radius: 30px;
+   color: hsl(0, 0%, 100%);
+    display: flex;
+   flex-direction: column;
+/*   align-items: center;*/
+   justify-content: space-between;
+}
+.part-left>main>h2{
+   color: hsl(0, 0%, 100%);
+   font-family: Hanken;
+}
+.part-right{
+   color: hsl(224, 30%, 27%);
+   background-image: white;
+   border-radius: 30px;
+   align-items: start;
+   display: flex;
+   flex-direction: column;
+/*   align-items: center;*/
+   justify-content: space-between;
+}
+.circle{
+   width: 150px;
+   height: 150px;
+   background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   border-radius: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+/*.circle>p{
+   margin: 0;
+}*/
+.val{
+   font-size: 3rem;
+   font-weight: 800;
+}
+.comment{
+   text-align: center;
+   width: 100%;
+   margin-bottom: 10px;
+}
+.comment>h3{
+   font-size: 2rem;
+/*   margin-bottom: 10px;*/
+font-weight: 700;
+}
+.comment>p{
+   color: hsla(0, 0%, 100%, 0.8);
+   font-size: 18px;
+   margin-top: 20px;
+   font-weight: 500;
+}
+.wrapper{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.item{
+   width: 100%;
+   padding: 16px;
+   background-color: red;
+   margin-bottom: 10px;
+   box-sizing: border-box;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 500;
+}
+.item-red{
+   background-color: hsla(0, 100%, 67%, 0.1);
+   color: hsl(0, 100%, 67%);
+}
+.item-orange{
+   background-color: hsla(39, 100%, 56%, 0.1);
+   color: hsl(39, 100%, 56%);
+}
+.item-teal{
+   background-color: hsla(166, 100%, 37%, 0.1);
+   color: hsl(166, 100%, 37%);
+}
+.item-blue{
+   background-color: hsla(234, 85%, 45%, 0.1);
+   color: hsl(234, 85%, 45%);
+}
+.item>.score{
+   color: hsl(224, 30%, 27%);
+}
+.item-btn{
+   width: 100%;
+}
+.img{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+}
+.btn{
+   width: 100%;
+   padding: 15px;
+   color: white;
+   text-decoration: none;
+   background-color: hsl(224, 30%, 27%);
+   border: none;
+   outline: none;
+   border-radius: 30px;
+   font-weight: 500;
+   font-family: Hanken;
+}
+.btn:hover{
+   cursor: pointer;
+   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+@media (width <= 375px){
+   .container{
+      width: 100%;
+/*      height: 100vh;*/
+      height: auto;
+      flex-direction: column;
+      font-size: 16px;
+      border-radius: 0;
+      box-shadow: 0;
+   }
+   .part{
+      width: 100%;
+      height: auto;
+      padding: 20px;
+   }
+   .part>main{
+      margin-bottom: 20px;
+   }
+   .part-left{
+      border-radius: 0 0 30px 30px;
+   }
+   .part-left>main>h2{
+      font-size: 1rem;
+   }
+   .circle{
+      width: 100px;
+      height: 100px;
+   }
+   .val{
+      font-size: 2rem;
+   }
+   .comment>h3{
+      font-size: 1.5rem;
+   }
+   .comment>p{
+      font-size: 16px;
+   }
+}
+@media (375px < width <= 520px){
+   .container{
+      width: 80%;
+      height: auto;
+      flex-direction: column;
+   }
+   .part{
+      width: 100%;
+   }
+}
+@media (520px < width <=768px){
+   .container{
+      width: 33rem;
+   }
+   .part{
+      width: 100%;
+   }
+}
+@media (width >= 1440px){
+   .container{
+      width: 40rem;
+      height: auto;
+   }
+   .part{
+      width: 100%;
+   }
+}
