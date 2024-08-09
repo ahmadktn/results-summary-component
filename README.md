@@ -31,14 +31,13 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://results-summary-component-ahmadktns-projects.vercel.app/](https://results-summary-component-ahmadktns-projects.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - Mobile-first workflow
 
@@ -58,5 +57,4 @@ I would like to start using CSS grids for my layout because I have been using fl
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ahmadktn](https://www.frontendmentor.io/profile/ahmadktn)
